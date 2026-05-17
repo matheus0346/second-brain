@@ -1,0 +1,50 @@
+site_name: Meu Segundo Cérebro
+site_description: Anotações de Engenharia de Software (UnB), Cibersegurança e Criptografia.
+site_author: Matheus Rodrigues Pontes
+
+# Configuração do Tema Material
+theme:
+  name: material
+  palette:
+    # Esquema de cores escuro (Slate)
+    scheme: slate
+    primary: black
+    accent: deep purple
+  features:
+    - navigation.tabs # Cria abas no topo para as áreas principais
+    - navigation.top # Botão "Voltar ao topo"
+    - search.suggest # Sugere palavras na busca
+    - search.highlight # Grifa o termo buscado na página
+    - content.code.copy # CRUCIAL: Botão de copiar nos blocos de código (útil para comandos Linux!)
+
+# Plugins Nativos
+plugins:
+  - search
+
+# Extensões do Markdown (A Mágica acontece aqui)
+markdown_extensions:
+  - admonition # Permite criar caixas de "Aviso", "Dica", "Perigo"
+  - pymdownx.details # Caixas expansíveis (spoiler)
+  - pymdownx.superfences # Blocos de código avançados
+  - pymdownx.highlight: # Colorir sintaxe de códigos
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.arithmatex: # HABILITA A MATEMÁTICA (Criptografia)
+      generic: true
+
+# Scripts para renderizar a matemática (MathJax)
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+# Estrutura do Site (Menu lateral)
+nav:
+  - Home: index.md
+  - 🎓 UnB - Eng. de Software:
+    - Semestre 4: faculdade/semestre-4.md
+  - 🛡️ Cibersegurança:
+    - Comandos Kali Linux: cyber/kali-linux.md
+  - 🔐 Criptografia:
+    - Matemática e Cifras: cripto/matematica.md
