@@ -7,10 +7,12 @@ assignees: ''
 
 ---
 
-### Dúvida
-### Contexto
-### Ações
-- [ ] Investigar / Pesquisar
+## **Dúvida**: 
+
+**Contexto**: 
+
+## **Ações**:
+- [ ] Investigar / Pesquisar shell reverso
 - [ ] Documentar no MkDocs e fechar a issue
 
 ### Links e Anotações Rápidas
